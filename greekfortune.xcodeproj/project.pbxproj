@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7441EA2A17C574A000FF105F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7441EA2917C574A000FF105F /* UIKit.framework */; };
+		7441EA2C17C574A000FF105F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7441EA2B17C574A000FF105F /* Foundation.framework */; };
+		7441EA2E17C574A000FF105F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7441EA2D17C574A000FF105F /* CoreGraphics.framework */; };
+		7441EA3417C574A000FF105F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7441EA3217C574A000FF105F /* InfoPlist.strings */; };
+		7441EA3617C574A000FF105F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7441EA3517C574A000FF105F /* main.m */; };
+		7441EA3A17C574A000FF105F /* GFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7441EA3917C574A000FF105F /* GFAppDelegate.m */; };
+		7441EA3C17C574A000FF105F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7441EA3B17C574A000FF105F /* Default.png */; };
+		7441EA3E17C574A000FF105F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7441EA3D17C574A000FF105F /* Default@2x.png */; };
+		7441EA4017C574A000FF105F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7441EA3F17C574A000FF105F /* Default-568h@2x.png */; };
+		7441EA4317C574A000FF105F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7441EA4117C574A000FF105F /* MainStoryboard.storyboard */; };
+		7441EA4617C574A000FF105F /* GFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7441EA4517C574A000FF105F /* GFViewController.m */; };
+		7441EA4E17C574A000FF105F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7441EA4D17C574A000FF105F /* SenTestingKit.framework */; };
+		7441EA4F17C574A000FF105F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7441EA2917C574A000FF105F /* UIKit.framework */; };
+		7441EA5017C574A000FF105F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7441EA2B17C574A000FF105F /* Foundation.framework */; };
+		7441EA5817C574A000FF105F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7441EA5617C574A000FF105F /* InfoPlist.strings */; };
+		7441EA5B17C574A000FF105F /* greekfortuneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7441EA5A17C574A000FF105F /* greekfortuneTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7441EA5117C574A000FF105F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7441EA1E17C574A000FF105F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7441EA2517C574A000FF105F;
+			remoteInfo = greekfortune;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7441EA2617C574A000FF105F /* greekfortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = greekfortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7441EA2917C574A000FF105F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7441EA2B17C574A000FF105F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7441EA2D17C574A000FF105F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7441EA3117C574A000FF105F /* greekfortune-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "greekfortune-Info.plist"; sourceTree = "<group>"; };
+		7441EA3317C574A000FF105F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7441EA3517C574A000FF105F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7441EA3717C574A000FF105F /* greekfortune-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "greekfortune-Prefix.pch"; sourceTree = "<group>"; };
+		7441EA3817C574A000FF105F /* GFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFAppDelegate.h; sourceTree = "<group>"; };
+		7441EA3917C574A000FF105F /* GFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFAppDelegate.m; sourceTree = "<group>"; };
+		7441EA3B17C574A000FF105F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7441EA3D17C574A000FF105F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7441EA3F17C574A000FF105F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7441EA4217C574A000FF105F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7441EA4417C574A000FF105F /* GFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFViewController.h; sourceTree = "<group>"; };
+		7441EA4517C574A000FF105F /* GFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFViewController.m; sourceTree = "<group>"; };
+		7441EA4C17C574A000FF105F /* greekfortuneTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = greekfortuneTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7441EA4D17C574A000FF105F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7441EA5517C574A000FF105F /* greekfortuneTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "greekfortuneTests-Info.plist"; sourceTree = "<group>"; };
+		7441EA5717C574A000FF105F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7441EA5917C574A000FF105F /* greekfortuneTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = greekfortuneTests.h; sourceTree = "<group>"; };
+		7441EA5A17C574A000FF105F /* greekfortuneTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = greekfortuneTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7441EA2317C574A000FF105F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7441EA2A17C574A000FF105F /* UIKit.framework in Frameworks */,
+				7441EA2C17C574A000FF105F /* Foundation.framework in Frameworks */,
+				7441EA2E17C574A000FF105F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7441EA4817C574A000FF105F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7441EA4E17C574A000FF105F /* SenTestingKit.framework in Frameworks */,
+				7441EA4F17C574A000FF105F /* UIKit.framework in Frameworks */,
+				7441EA5017C574A000FF105F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7441EA1D17C574A000FF105F = {
+			isa = PBXGroup;
+			children = (
+				7441EA2F17C574A000FF105F /* greekfortune */,
+				7441EA5317C574A000FF105F /* greekfortuneTests */,
+				7441EA2817C574A000FF105F /* Frameworks */,
+				7441EA2717C574A000FF105F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7441EA2717C574A000FF105F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7441EA2617C574A000FF105F /* greekfortune.app */,
+				7441EA4C17C574A000FF105F /* greekfortuneTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7441EA2817C574A000FF105F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7441EA2917C574A000FF105F /* UIKit.framework */,
+				7441EA2B17C574A000FF105F /* Foundation.framework */,
+				7441EA2D17C574A000FF105F /* CoreGraphics.framework */,
+				7441EA4D17C574A000FF105F /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7441EA2F17C574A000FF105F /* greekfortune */ = {
+			isa = PBXGroup;
+			children = (
+				7441EA3817C574A000FF105F /* GFAppDelegate.h */,
+				7441EA3917C574A000FF105F /* GFAppDelegate.m */,
+				7441EA4117C574A000FF105F /* MainStoryboard.storyboard */,
+				7441EA4417C574A000FF105F /* GFViewController.h */,
+				7441EA4517C574A000FF105F /* GFViewController.m */,
+				7441EA3017C574A000FF105F /* Supporting Files */,
+			);
+			path = greekfortune;
+			sourceTree = "<group>";
+		};
+		7441EA3017C574A000FF105F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7441EA3117C574A000FF105F /* greekfortune-Info.plist */,
+				7441EA3217C574A000FF105F /* InfoPlist.strings */,
+				7441EA3517C574A000FF105F /* main.m */,
+				7441EA3717C574A000FF105F /* greekfortune-Prefix.pch */,
+				7441EA3B17C574A000FF105F /* Default.png */,
+				7441EA3D17C574A000FF105F /* Default@2x.png */,
+				7441EA3F17C574A000FF105F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7441EA5317C574A000FF105F /* greekfortuneTests */ = {
+			isa = PBXGroup;
+			children = (
+				7441EA5917C574A000FF105F /* greekfortuneTests.h */,
+				7441EA5A17C574A000FF105F /* greekfortuneTests.m */,
+				7441EA5417C574A000FF105F /* Supporting Files */,
+			);
+			path = greekfortuneTests;
+			sourceTree = "<group>";
+		};
+		7441EA5417C574A000FF105F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7441EA5517C574A000FF105F /* greekfortuneTests-Info.plist */,
+				7441EA5617C574A000FF105F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7441EA2517C574A000FF105F /* greekfortune */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7441EA5E17C574A000FF105F /* Build configuration list for PBXNativeTarget "greekfortune" */;
+			buildPhases = (
+				7441EA2217C574A000FF105F /* Sources */,
+				7441EA2317C574A000FF105F /* Frameworks */,
+				7441EA2417C574A000FF105F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = greekfortune;
+			productName = greekfortune;
+			productReference = 7441EA2617C574A000FF105F /* greekfortune.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7441EA4B17C574A000FF105F /* greekfortuneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7441EA6117C574A000FF105F /* Build configuration list for PBXNativeTarget "greekfortuneTests" */;
+			buildPhases = (
+				7441EA4717C574A000FF105F /* Sources */,
+				7441EA4817C574A000FF105F /* Frameworks */,
+				7441EA4917C574A000FF105F /* Resources */,
+				7441EA4A17C574A000FF105F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7441EA5217C574A000FF105F /* PBXTargetDependency */,
+			);
+			name = greekfortuneTests;
+			productName = greekfortuneTests;
+			productReference = 7441EA4C17C574A000FF105F /* greekfortuneTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7441EA1E17C574A000FF105F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GF;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = Rasesh;
+			};
+			buildConfigurationList = 7441EA2117C574A000FF105F /* Build configuration list for PBXProject "greekfortune" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7441EA1D17C574A000FF105F;
+			productRefGroup = 7441EA2717C574A000FF105F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7441EA2517C574A000FF105F /* greekfortune */,
+				7441EA4B17C574A000FF105F /* greekfortuneTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7441EA2417C574A000FF105F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7441EA3417C574A000FF105F /* InfoPlist.strings in Resources */,
+				7441EA3C17C574A000FF105F /* Default.png in Resources */,
+				7441EA3E17C574A000FF105F /* Default@2x.png in Resources */,
+				7441EA4017C574A000FF105F /* Default-568h@2x.png in Resources */,
+				7441EA4317C574A000FF105F /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7441EA4917C574A000FF105F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7441EA5817C574A000FF105F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7441EA4A17C574A000FF105F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7441EA2217C574A000FF105F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7441EA3617C574A000FF105F /* main.m in Sources */,
+				7441EA3A17C574A000FF105F /* GFAppDelegate.m in Sources */,
+				7441EA4617C574A000FF105F /* GFViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7441EA4717C574A000FF105F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7441EA5B17C574A000FF105F /* greekfortuneTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7441EA5217C574A000FF105F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7441EA2517C574A000FF105F /* greekfortune */;
+			targetProxy = 7441EA5117C574A000FF105F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7441EA3217C574A000FF105F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7441EA3317C574A000FF105F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7441EA4117C574A000FF105F /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7441EA4217C574A000FF105F /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		7441EA5617C574A000FF105F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7441EA5717C574A000FF105F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7441EA5C17C574A000FF105F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7441EA5D17C574A000FF105F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7441EA5F17C574A000FF105F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "greekfortune/greekfortune-Prefix.pch";
+				INFOPLIST_FILE = "greekfortune/greekfortune-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7441EA6017C574A000FF105F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "greekfortune/greekfortune-Prefix.pch";
+				INFOPLIST_FILE = "greekfortune/greekfortune-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7441EA6217C574A000FF105F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/greekfortune.app/greekfortune";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "greekfortune/greekfortune-Prefix.pch";
+				INFOPLIST_FILE = "greekfortuneTests/greekfortuneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7441EA6317C574A000FF105F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/greekfortune.app/greekfortune";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "greekfortune/greekfortune-Prefix.pch";
+				INFOPLIST_FILE = "greekfortuneTests/greekfortuneTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7441EA2117C574A000FF105F /* Build configuration list for PBXProject "greekfortune" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7441EA5C17C574A000FF105F /* Debug */,
+				7441EA5D17C574A000FF105F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7441EA5E17C574A000FF105F /* Build configuration list for PBXNativeTarget "greekfortune" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7441EA5F17C574A000FF105F /* Debug */,
+				7441EA6017C574A000FF105F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7441EA6117C574A000FF105F /* Build configuration list for PBXNativeTarget "greekfortuneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7441EA6217C574A000FF105F /* Debug */,
+				7441EA6317C574A000FF105F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7441EA1E17C574A000FF105F /* Project object */;
+}
