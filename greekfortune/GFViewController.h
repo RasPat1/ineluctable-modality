@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface GFViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *fameBtn;
+@property (weak, nonatomic) IBOutlet UILabel *label1;
 
 @end
