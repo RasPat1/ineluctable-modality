@@ -385,6 +385,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "greekfortune/greekfortune-Prefix.pch";
 				INFOPLIST_FILE = "greekfortune/greekfortune-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,6 +397,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "greekfortune/greekfortune-Prefix.pch";
 				INFOPLIST_FILE = "greekfortune/greekfortune-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,6 +456,7 @@
 				7441EA6017C574A000FF105F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7441EA6117C574A000FF105F /* Build configuration list for PBXNativeTarget "greekfortuneTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +465,7 @@
 				7441EA6317C574A000FF105F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
