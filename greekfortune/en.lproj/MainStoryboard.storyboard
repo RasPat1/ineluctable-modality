@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="NV5-fZ-hQG">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="lQ7-ys-Bfi">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="NV5-fZ-hQG" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="baO-jW-gq8">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="kJq-bK-GDy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9F-y1-haU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-343" y="216"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="5">
             <objects>
@@ -25,8 +40,8 @@
                                     <action selector="famePress:" destination="2" eventType="touchUpInside" id="Hcp-Ku-E6i"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="286" translatesAutoresizingMaskIntoConstraints="NO" id="Bwv-V7-7L2">
-                                <rect key="frame" x="20" y="44" width="286" height="259"/>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="286" translatesAutoresizingMaskIntoConstraints="NO" id="Bwv-V7-7L2">
+                                <rect key="frame" x="20" y="81" width="286" height="222"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="259" id="Bik-D7-q3M"/>
@@ -39,6 +54,17 @@
                                     <outletCollection property="gestureRecognizers" destination="tmb-ic-MUy" appends="YES" id="Mv6-FT-ul6"/>
                                 </connections>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lem-OA-Tou">
+                                <rect key="frame" x="20" y="432" width="115" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" image="Proteus-Alciato.gif">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="yvw-Ry-DvY" kind="push" id="vSh-oa-2xd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -48,6 +74,7 @@
                             <constraint firstAttribute="bottom" secondItem="3Xc-9J-0h6" secondAttribute="bottom" constant="20" symbolic="YES" id="nmo-90-s98"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rwh-nI-q7p"/>
                     <connections>
                         <outlet property="fameBtn" destination="3Xc-9J-0h6" id="bYh-bN-q5F"/>
                         <outlet property="label1" destination="Bwv-V7-7L2" id="btX-z1-LYG"/>
@@ -61,7 +88,41 @@
                 </tapGestureRecognizer>
             </objects>
         </scene>
+        <!--Proteus View Controller - Proteus-->
+        <scene sceneID="x5Z-3p-ScR">
+            <objects>
+                <viewController title="Proteus" id="yvw-Ry-DvY" customClass="GFProteusViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HqN-JC-O0E"/>
+                        <viewControllerLayoutGuide type="bottom" id="ScM-uu-fpJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nfp-0r-bZr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qHW-1X-Hq3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6d0-fd-awp"/>
+                    <connections>
+                        <outlet property="textView" destination="qHW-1X-Hq3" id="1Vo-DM-Hbk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ker-r4-RYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="521" y="127"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Proteus-Alciato.gif" width="110" height="116"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
