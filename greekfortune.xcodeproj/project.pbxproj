@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1275AC711836B8DC00344230 /* GFProteusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1275AC701836B8DC00344230 /* GFProteusViewController.m */; };
+		1275AC761836B92F00344230 /* Proteus-Alciato.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1275AC741836B92F00344230 /* Proteus-Alciato.gif */; };
+		1275AC771836B92F00344230 /* Proteus-Alciato@2x.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1275AC751836B92F00344230 /* Proteus-Alciato@2x.gif */; };
+		1275AC791836BA3600344230 /* proteus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1275AC781836BA3600344230 /* proteus.txt */; };
+		1275AC7C1836BC2D00344230 /* synesthesia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1275AC7A1836BC2D00344230 /* synesthesia.jpg */; };
+		1275AC7D1836BC2D00344230 /* synesthesia@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1275AC7B1836BC2D00344230 /* synesthesia@2x.jpg */; };
+		1275AC801836BCB400344230 /* GFSynesthesiaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1275AC7F1836BCB400344230 /* GFSynesthesiaViewController.m */; };
 		7441EA2A17C574A000FF105F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7441EA2917C574A000FF105F /* UIKit.framework */; };
 		7441EA2C17C574A000FF105F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7441EA2B17C574A000FF105F /* Foundation.framework */; };
 		7441EA2E17C574A000FF105F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7441EA2D17C574A000FF105F /* CoreGraphics.framework */; };
@@ -36,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1275AC6F1836B8DC00344230 /* GFProteusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFProteusViewController.h; sourceTree = "<group>"; };
+		1275AC701836B8DC00344230 /* GFProteusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFProteusViewController.m; sourceTree = "<group>"; };
+		1275AC741836B92F00344230 /* Proteus-Alciato.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Proteus-Alciato.gif"; sourceTree = "<group>"; };
+		1275AC751836B92F00344230 /* Proteus-Alciato@2x.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "Proteus-Alciato@2x.gif"; sourceTree = "<group>"; };
+		1275AC781836BA3600344230 /* proteus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = proteus.txt; sourceTree = "<group>"; };
+		1275AC7A1836BC2D00344230 /* synesthesia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = synesthesia.jpg; sourceTree = "<group>"; };
+		1275AC7B1836BC2D00344230 /* synesthesia@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "synesthesia@2x.jpg"; sourceTree = "<group>"; };
+		1275AC7E1836BCB400344230 /* GFSynesthesiaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSynesthesiaViewController.h; sourceTree = "<group>"; };
+		1275AC7F1836BCB400344230 /* GFSynesthesiaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFSynesthesiaViewController.m; sourceTree = "<group>"; };
+		1275AC811836BD2100344230 /* GFModalDismissDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFModalDismissDelegate.h; sourceTree = "<group>"; };
 		7441EA2617C574A000FF105F /* greekfortune.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = greekfortune.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7441EA2917C574A000FF105F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7441EA2B17C574A000FF105F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,8 +137,13 @@
 				7441EA3817C574A000FF105F /* GFAppDelegate.h */,
 				7441EA3917C574A000FF105F /* GFAppDelegate.m */,
 				7441EA4117C574A000FF105F /* MainStoryboard.storyboard */,
+				1275AC811836BD2100344230 /* GFModalDismissDelegate.h */,
+				1275AC7E1836BCB400344230 /* GFSynesthesiaViewController.h */,
+				1275AC7F1836BCB400344230 /* GFSynesthesiaViewController.m */,
 				7441EA4417C574A000FF105F /* GFViewController.h */,
 				7441EA4517C574A000FF105F /* GFViewController.m */,
+				1275AC6F1836B8DC00344230 /* GFProteusViewController.h */,
+				1275AC701836B8DC00344230 /* GFProteusViewController.m */,
 				7441EA3017C574A000FF105F /* Supporting Files */,
 			);
 			path = greekfortune;
@@ -130,6 +152,10 @@
 		7441EA3017C574A000FF105F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1275AC7A1836BC2D00344230 /* synesthesia.jpg */,
+				1275AC7B1836BC2D00344230 /* synesthesia@2x.jpg */,
+				1275AC741836B92F00344230 /* Proteus-Alciato.gif */,
+				1275AC751836B92F00344230 /* Proteus-Alciato@2x.gif */,
 				7441EA3117C574A000FF105F /* greekfortune-Info.plist */,
 				7441EA3217C574A000FF105F /* InfoPlist.strings */,
 				7441EA3517C574A000FF105F /* main.m */,
@@ -137,6 +163,7 @@
 				7441EA3B17C574A000FF105F /* Default.png */,
 				7441EA3D17C574A000FF105F /* Default@2x.png */,
 				7441EA3F17C574A000FF105F /* Default-568h@2x.png */,
+				1275AC781836BA3600344230 /* proteus.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -233,7 +260,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7441EA3417C574A000FF105F /* InfoPlist.strings in Resources */,
+				1275AC7D1836BC2D00344230 /* synesthesia@2x.jpg in Resources */,
+				1275AC7C1836BC2D00344230 /* synesthesia.jpg in Resources */,
+				1275AC761836B92F00344230 /* Proteus-Alciato.gif in Resources */,
 				7441EA3C17C574A000FF105F /* Default.png in Resources */,
+				1275AC791836BA3600344230 /* proteus.txt in Resources */,
+				1275AC771836B92F00344230 /* Proteus-Alciato@2x.gif in Resources */,
 				7441EA3E17C574A000FF105F /* Default@2x.png in Resources */,
 				7441EA4017C574A000FF105F /* Default-568h@2x.png in Resources */,
 				7441EA4317C574A000FF105F /* MainStoryboard.storyboard in Resources */,
@@ -273,6 +305,8 @@
 			files = (
 				7441EA3617C574A000FF105F /* main.m in Sources */,
 				7441EA3A17C574A000FF105F /* GFAppDelegate.m in Sources */,
+				1275AC801836BCB400344230 /* GFSynesthesiaViewController.m in Sources */,
+				1275AC711836B8DC00344230 /* GFProteusViewController.m in Sources */,
 				7441EA4617C574A000FF105F /* GFViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +419,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "greekfortune/greekfortune-Prefix.pch";
 				INFOPLIST_FILE = "greekfortune/greekfortune-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -396,6 +431,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "greekfortune/greekfortune-Prefix.pch";
 				INFOPLIST_FILE = "greekfortune/greekfortune-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,6 +490,7 @@
 				7441EA6017C574A000FF105F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7441EA6117C574A000FF105F /* Build configuration list for PBXNativeTarget "greekfortuneTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +499,7 @@
 				7441EA6317C574A000FF105F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
