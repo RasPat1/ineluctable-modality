@@ -10,7 +10,13 @@
 
 @implementation GFSynesthesiaViewController {
     CGFloat _hue;
+    double _speed;
     BOOL _shouldKill;
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    _speed = 0.2;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -31,7 +37,7 @@
 }
 
 - (void)animateShift {
-    [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+    [UIView animateWithDuration:_speed delay:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
         [self shiftColor];
     } completion:^(BOOL finished) {
         if (!_shouldKill) {
@@ -49,5 +55,38 @@
 - (void)dismiss {
     [self.delegate didRequestDismissFromViewController:self];
 }
+
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    BOOL shouldBegin = YES;
+
+    if (gestureRecognizer == self.pgr) {
+
+        CGPoint delta = [self.pgr translationInView:self.view];
+
+        if (fabs(delta.x) > fabs(delta.y)) {
+            shouldBegin = NO;
+        }
+    }
+
+    return shouldBegin;
+}
+
+- (IBAction)handlePan:(UIPanGestureRecognizer *)sender {
+    CGFloat dy = [sender translationInView:self.view].y;
+    [sender setTranslation:CGPointZero inView:self.view];
+
+    double newSpeed = _speed + dy / 100.0;
+    if (newSpeed < 0.0) {
+        newSpeed = 0;
+    }
+    _speed = newSpeed;
+
+}
+
+- (IBAction)handleSingleTap:(UITapGestureRecognizer *)sender {
+}
+- (IBAction)handleDoubleTap:(UITapGestureRecognizer *)sender {
+}
+
 
 @end

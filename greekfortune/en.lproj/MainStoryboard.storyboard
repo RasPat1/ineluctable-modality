@@ -123,14 +123,43 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="gbW-m0-YKX" firstAttribute="top" secondItem="bKY-7M-QJN" secondAttribute="bottom" constant="20" id="r8D-Oz-qiX"/>
                             <constraint firstAttribute="trailing" secondItem="bKY-7M-QJN" secondAttribute="trailing" constant="20" id="wuf-c0-dVi"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xdu-aJ-98H" appends="YES" id="FNx-CY-y9I"/>
+                            <outletCollection property="gestureRecognizers" destination="dnN-1m-nGD" appends="YES" id="fIZ-OX-VWf"/>
+                            <outletCollection property="gestureRecognizers" destination="2ND-sq-cWi" appends="YES" id="n6A-XU-zHf"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="zAc-kZ-SVb"/>
+                    <connections>
+                        <outlet property="dtgr" destination="2ND-sq-cWi" id="Oht-5m-1Xk"/>
+                        <outlet property="pgr" destination="xdu-aJ-98H" id="HL3-qg-hrw"/>
+                        <outlet property="stgr" destination="dnN-1m-nGD" id="GWF-Uy-wv4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxt-OE-Y3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="xdu-aJ-98H">
+                    <connections>
+                        <action selector="handlePan:" destination="2bP-7g-bbY" id="Gal-LY-Y0z"/>
+                        <outlet property="delegate" destination="2bP-7g-bbY" id="5Ri-9V-1pd"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="dnN-1m-nGD">
+                    <connections>
+                        <action selector="handleSingleTap:" destination="2bP-7g-bbY" id="vUL-1X-Tui"/>
+                        <outlet property="delegate" destination="2bP-7g-bbY" id="4bO-nW-Avj"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer numberOfTouchesRequired="2" id="2ND-sq-cWi">
+                    <connections>
+                        <action selector="handleDoubleTap:" destination="2bP-7g-bbY" id="ngm-sN-L5B"/>
+                        <outlet property="delegate" destination="2bP-7g-bbY" id="UqY-BG-DUj"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="570" y="10"/>
         </scene>
