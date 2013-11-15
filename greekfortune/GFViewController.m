@@ -7,11 +7,16 @@
 //
 
 #import "GFViewController.h"
+#import "GFSynesthesiaViewController.h"
+
+NSString * const kGFSynesthesiaPresentSegueIdentifier = @"GFSynesthesiaPresentSegueIdentifier";
 
 @interface GFViewController ()
+
 @property (nonatomic, strong) NSString *fortunes;
 @property (nonatomic, strong) NSMutableArray *fortuneArray;
 @property (nonatomic, strong) NSArray *fortuneArrayBluePrint;
+
 @end
 
 @implementation GFViewController
@@ -48,5 +53,19 @@
     
 }
 
+- (void)didRequestDismissFromViewController:(UIViewController *)vc {
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:kGFSynesthesiaPresentSegueIdentifier]) {
+
+        GFViewController *presenting = self;
+        GFSynesthesiaViewController *presented = segue.destinationViewController;
+
+        presented.delegate = presenting;
+
+    }
+}
 
 @end

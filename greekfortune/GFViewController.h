@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GFModalDismissDelegate.h"
 
-@interface GFViewController : UIViewController
+extern NSString * const kGFSynesthesiaPresentSegueIdentifier;
+
+@interface GFViewController : UIViewController <GFModalDismissDelegate>
+
 @property (weak, nonatomic) IBOutlet UIButton *fameBtn;
 @property (weak, nonatomic) IBOutlet UILabel *label1;
 

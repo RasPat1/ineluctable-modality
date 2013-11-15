@@ -40,11 +40,11 @@
                                     <action selector="famePress:" destination="2" eventType="touchUpInside" id="Hcp-Ku-E6i"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" contentMode="left" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="286" translatesAutoresizingMaskIntoConstraints="NO" id="Bwv-V7-7L2">
-                                <rect key="frame" x="20" y="81" width="286" height="222"/>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="286" translatesAutoresizingMaskIntoConstraints="NO" id="Bwv-V7-7L2">
+                                <rect key="frame" x="20" y="81" width="286" height="150"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="259" id="Bik-D7-q3M"/>
+                                    <constraint firstAttribute="height" constant="150" id="Bik-D7-q3M"/>
                                     <constraint firstAttribute="width" constant="286" id="Fef-tW-MzN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -65,12 +65,23 @@
                                     <segue destination="yvw-Ry-DvY" kind="push" id="vSh-oa-2xd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEQ-ll-4Py">
+                                <rect key="frame" x="20" y="279" width="223" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button" image="synesthesia.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2bP-7g-bbY" kind="modal" identifier="GFSynesthesiaPresentSegueIdentifier" modalTransitionStyle="crossDissolve" id="bWq-SM-Zat"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Bwv-V7-7L2" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" id="BNE-f1-H01"/>
-                            <constraint firstItem="Bwv-V7-7L2" firstAttribute="top" secondItem="3" secondAttribute="top" constant="44" id="I2H-7L-U3g"/>
+                            <constraint firstItem="Bwv-V7-7L2" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" id="9G9-nl-JlV"/>
                             <constraint firstAttribute="trailing" secondItem="3Xc-9J-0h6" secondAttribute="trailing" constant="20" symbolic="YES" id="TeR-bh-cya"/>
+                            <constraint firstItem="Bwv-V7-7L2" firstAttribute="top" secondItem="YLT-Gs-wBv" secondAttribute="bottom" constant="17" id="nLL-Ee-rD9"/>
                             <constraint firstAttribute="bottom" secondItem="3Xc-9J-0h6" secondAttribute="bottom" constant="20" symbolic="YES" id="nmo-90-s98"/>
                         </constraints>
                     </view>
@@ -87,6 +98,41 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
+        </scene>
+        <!--Synesthesia View Controller-->
+        <scene sceneID="WdZ-20-ekr">
+            <objects>
+                <viewController id="2bP-7g-bbY" customClass="GFSynesthesiaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FUD-V0-hS7"/>
+                        <viewControllerLayoutGuide type="bottom" id="gbW-m0-YKX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SLm-EX-RXx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bKY-7M-QJN">
+                                <rect key="frame" x="270" y="518" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressClose:" destination="2bP-7g-bbY" eventType="touchUpInside" id="hQ8-jK-995"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gbW-m0-YKX" firstAttribute="top" secondItem="bKY-7M-QJN" secondAttribute="bottom" constant="20" id="r8D-Oz-qiX"/>
+                            <constraint firstAttribute="trailing" secondItem="bKY-7M-QJN" secondAttribute="trailing" constant="20" id="wuf-c0-dVi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zAc-kZ-SVb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rxt-OE-Y3O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="570" y="10"/>
         </scene>
         <!--Proteus View Controller - Proteus-->
         <scene sceneID="x5Z-3p-ScR">
@@ -117,11 +163,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ker-r4-RYd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="521" y="127"/>
+            <point key="canvasLocation" x="570" y="699"/>
         </scene>
     </scenes>
     <resources>
         <image name="Proteus-Alciato.gif" width="110" height="116"/>
+        <image name="synesthesia.jpg" width="400" height="290"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
